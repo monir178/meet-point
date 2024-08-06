@@ -48,7 +48,7 @@ const MeeetingModal = ({
           </h1>
           {children}
           <Button
-            className="bg-gradient-to-tr from-blue-700 to-indigo-400 hover:from-blue-800 hover:to-indigo-500 transition-all focus-visible:ring-0 focus-visible:ring-offset-0"
+            className="hover:brightness-110 hover:bg-indigo-700 font-bold py-4 rounded-full bg-indigo-500 shadow-lg shadow-indigo-500/50 hover:shadow-indigo-700/50 text-white"
             onClick={handleClick}>
             {buttonIcon && (
               <Image

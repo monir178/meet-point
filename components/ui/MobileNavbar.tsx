@@ -50,9 +50,9 @@ const MobileNavbar = () => {
                         href={link.route}
                         key={link.label}
                         className={cn(
-                          "flex gap-4 items-center p-4 rounded-lg w-full max-w-60 hover:bg-dark-2 transition-all",
+                          "flex gap-4 items-center p-4  justify-start hover:animate-pulse hover:bg-indigo-900  transition-all rounded-full",
                           {
-                            "bg-gradient-to-tr from-blue-700 to-indigo-400 transition-all":
+                            "font-bold p-4  transition-all rounded-full hover:animate-none hover:bg-indigo-500 shadow-lg bg-indigo-500 shadow-indigo-500/50 text-white":
                               isActive,
                           }
                         )}>
