@@ -64,7 +64,7 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
   const noCallsMessage = getNoCallsMessage();
 
   return (
-    <div className="grid grid-cols-1 gap-5 xl:grid-cols-2">
+    <div className="grid grid-cols-1 gap-5 xl:grid-cols-2 2xl:grid-cols-3">
       {calls && calls.length > 0 ? (
         calls.map((meeting: Call | CallRecording) => (
           <MeetingCard
@@ -77,9 +77,9 @@ const CallList = ({ type }: { type: "ended" | "upcoming" | "recordings" }) => {
                 : "/icons/recordings.svg"
             }
             title={
-              (meeting as Call).state?.custom?.description ||
-              (meeting as CallRecording).filename?.substring(0, 20) ||
-              "No Description"
+              (meeting as Call).state?.custom?.description?.substring(0, 26) ||
+              (meeting as CallRecording)?.filename?.substring(0, 20) ||
+              "Personal Meeting"
             }
             date={
               (meeting as Call).state?.startsAt?.toLocaleString() ||

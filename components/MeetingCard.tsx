@@ -62,7 +62,7 @@ const MeetingCard = ({
           <div className="flex gap-2">
             <Button
               onClick={handleClick}
-              className="rounded bg-indigo-400 px-6">
+              className="hover:brightness-110 hover:bg-green-700 font-bold py-4 rounded-full bg-green-500 shadow-lg shadow-green-500/50 hover:shadow-green-700/50 text-white">
               {buttonIcon1 && (
                 <Image src={buttonIcon1} alt="feature" width={20} height={20} />
               )}
