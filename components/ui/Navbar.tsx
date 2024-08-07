@@ -12,10 +12,10 @@ const Navbar = () => {
           alt="Meet Point Logo"
           width={40}
           height={40}
-          className="max-sm:size-10"
+          className="max-sm:size-10 max-sm:h-8"
         />
 
-        <p className="text-[26px] font-extrabold text-white max-sm:hidden">
+        <p className="text-[26px] font-extrabold max-sm:hidden gradient-text">
           Meet Point
         </p>
       </Link>

@@ -58,6 +58,25 @@
   filter: invert(1);
 }
 
+.cl-formButtonPrimary {
+  @apply font-bold rounded-full bg-indigo-500 hover:animate-pulse text-white;
+}
+
+.cl-socialButtons {
+  display: flex;
+}
+
+.cl-logoImage {
+  width: 200px;
+  height: 140px;
+}
+
+.cl-socialButtonsProviderIcon {
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+
 .cl-button__manageAccount:hover {
   color: #1d4ed8;
 }
@@ -107,6 +126,23 @@
   max-width: 350px;
   display: block;
   animation: show 0.7s forwards linear;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, rgb(61, 103, 241), rgb(162, 46, 245));
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s linear infinite alternate-reverse;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 @keyframes show {

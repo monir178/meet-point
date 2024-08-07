@@ -34,9 +34,11 @@ const MobileNavbar = () => {
               alt="Meet Point Logo"
               width={28}
               height={28}
-              className="max-sm:size-10"
+              className="max-sm:size-10 max-sm:h-8"
             />
-            <p className="text-[20px] font-extrabold text-white ">Meet Point</p>
+            <p className="text-[20px] font-extrabold gradient-text ">
+              Meet Point
+            </p>
           </Link>
 
           <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
